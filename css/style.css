@@ -19,7 +19,7 @@ body {
   
   /* Header */
   #header {
-    background-color: #1e1e1e;
+    background-color: rgb(30, 30, 30);
   }
   
   /* Sections */
@@ -32,7 +32,15 @@ body {
   #hero {
     background-color: #121212;
   }
-  
+  #hero:before {
+    content: "";
+    background: rgba(30, 30, 30, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
   #hero h1, #hero p {
     color: #e0e0e0;
   }
@@ -68,6 +76,7 @@ body {
   }
   
   .resume-item h4, .resume-item h5, .resume-item p, .resume-item ul li {
+    background-color: #1e1e1e;
     color: #e0e0e0;
   }
   
