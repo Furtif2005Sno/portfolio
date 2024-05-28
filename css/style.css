@@ -86,7 +86,7 @@ body {
   }
   
   .portfolio .section-title h2, .portfolio .section-title p {
-    color: #e0e0e0;
+    color: #e0e0e0 !important;
   }
   
   .portfolio .portfolio-wrap {
@@ -95,7 +95,7 @@ body {
   
   .portfolio .portfolio-info {
     background-color: rgba(0, 0, 0, 0.7);
-    color: #e0e0e0;
+    color: #e0e0e0 !important;
   }
   
   /* Footer */
