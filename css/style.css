@@ -46,7 +46,7 @@ body {
   }
   
   #hero .typed {
-    color: #ff4081;
+    color: #ff3e3e;
   }
   
   #hero .social-links a {
@@ -54,7 +54,7 @@ body {
   }
   
   #hero .social-links a:hover {
-    color: #ff4081;
+    color: #ff3e3e;
   }
   
   /* À propos */
@@ -72,11 +72,11 @@ body {
   }
   
   .resume-title {
-    color: #ff4081;
+    color: #ff3e3e;
   }
   
   .resume-item h4, .resume-item h5, .resume-item p, .resume-item ul li {
-    background-color: #1e1e1e;
+    background-color: #1e1e1e !important; 
     color: #e0e0e0;
   }
   
@@ -105,7 +105,7 @@ body {
   }
   
   #footer a {
-    color: #ff4081;
+    color: #ff3e3e;
   }
   
   #footer a:hover {
@@ -118,12 +118,12 @@ body {
   
   /* Bouton de retour en haut */
   .back-to-top {
-    background-color: #ff4081;
+    background-color: #ff3e3e;
     color: #e0e0e0;
   }
   
   .back-to-top:hover {
     background-color: #e0e0e0;
-    color: #ff4081;
+    color: #ff3e3e;
   }
   
