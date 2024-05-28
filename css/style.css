@@ -1,16 +1,16 @@
 /* Général */
 body {
-    background-color: #121212;
+    background-color: #1e1e1e;
     color: #e0e0e0;
   }
   
   /* Navigation */
   .nav-menu a {
-    color: #e0e0e0;
+    color: #1e1e1e;
   }
   
   .nav-menu a:hover, .nav-menu .active {
-    color: #ff4081;
+    color: #ff3e3e;
   }
   
   .nav-menu ul {
