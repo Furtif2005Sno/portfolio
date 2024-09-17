@@ -279,11 +279,12 @@ h6 {
   position: relative;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 768px) { /* Pour les écrans mobiles */
   #hero {
-    padding-left: 160px;
+    background-position: right 8% center; /* Ajuste l'image pour qu'elle reste visible à droite */
   }
 }
+
 
 #hero:before {
   content: "";
