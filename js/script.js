@@ -12,6 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
             age--;
         }
 
-        ageElement.textContent = age ;
+        ageElement.textContent = age + ' '; // Ajoute un espace après l'âge
     }
 });
