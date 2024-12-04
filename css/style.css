@@ -144,4 +144,11 @@ body {
     background-color: #e0e0e0;
     color: #ff3e3e;
   }
+  .custom-danger {
+    --bs-btn-border-color: #ff3e3e; /* Ta couleur rouge personnalisée */
+    --bs-btn-hover-bg: #ff3e3e; /* Fond au survol */
+    --bs-btn-hover-border-color: #ff3e3e; /* Bordure au survol */
+    --bs-btn-color: #ff3e3e; /* Couleur du texte */
+    --bs-btn-hover-color: #fff; /* Couleur du texte au survol */
+  }
   
