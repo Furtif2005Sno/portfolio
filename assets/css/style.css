@@ -277,11 +277,21 @@ h6 {
   background: url("../img/hero-bg.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
+  
 }
 
-@media (max-width: 768px) { /* Pour les écrans mobiles */
+/* Ce padding s'appliquera uniquement aux écrans larges */
+@media (min-width: 992px) {
   #hero {
-    background-position: right 8% center; /* Ajuste l'image pour qu'elle reste visible à droite */
+    padding-left: 80px !important; /* Ajuste cette valeur selon la hauteur de ta navbar */
+  }
+}
+
+/* Media query pour les petits écrans (mobiles et tablettes) */
+@media (max-width: 768px) {
+  #hero {
+    background-position: right 8% center;
+    padding-left: 0; /* Pas de padding sur mobile */
   }
 }
 
