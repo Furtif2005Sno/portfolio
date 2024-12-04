@@ -65,6 +65,11 @@ body {
   .about h2, .about p {
     color: #e0e0e0;
   }
+
+  /* Photo de profile */
+  .profile {
+    border-radius: 25px;
+  }
   
   /* Historique */
   .resume {
