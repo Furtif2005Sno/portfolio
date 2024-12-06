@@ -19,7 +19,8 @@ body {
   
   /* Header */
   #header {
-    background-color: rgb(30, 30, 30);
+    background-color: #1e1e1e;
+    transition: width 0.3s ease;
   }
   
   /* Sections */
