@@ -148,15 +148,25 @@ h6 {
 /**
 * Desktop Navigation 
 */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  width: 80px;
+  transition: width 0.3s ease;
+}
+
 .nav-menu {
   padding: 0;
   display: block;
+  transition: 0.3s;
 }
 
 .nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
+  transition: 0.3s;
 }
 
 .nav-menu>ul>li {
@@ -212,6 +222,7 @@ h6 {
 .nav-menu li:hover>a {
   color: #fff;
   background: #bb0505;
+  transition: 0.3s;
 }
 
 .nav-menu a:hover span,
@@ -219,12 +230,14 @@ h6 {
 .nav-menu .active:focus span,
 .nav-menu li:hover>a span {
   color: #fff;
+  transition: 0.3s;
 }
 
 .nav-menu a:hover,
 .nav-menu li:hover>a {
   width: 100%;
   color: #fff;
+  transition: 0.3s;
 }
 
 .nav-menu a:hover span,
