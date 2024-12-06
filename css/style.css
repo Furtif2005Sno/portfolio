@@ -21,6 +21,13 @@ body {
   #header {
     background-color: #1e1e1e00;
   }
+
+  @media (max-width: 991px) {
+    /* Header */
+    #header {
+      background-color: #1e1e1e;
+    }
+  }
   
   /* Sections */
   section {
