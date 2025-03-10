@@ -127,15 +127,16 @@
     }
   });
 
-  /**
-   * Preloader
-   */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
+  document.addEventListener("DOMContentLoaded", function () {
+    let preloader = document.getElementById("preloader");
+    if (preloader) {
+      window.addEventListener("load", function () {
+        preloader.style.opacity = "0";
+        setTimeout(() => { preloader.style.display = "none"; }, 500);
+      });
+    }
+  });
+  
 
   /**
    * Hero type effect
