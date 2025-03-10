@@ -271,3 +271,19 @@
   new PureCounter();
 
 })()
+document.addEventListener("DOMContentLoaded", function () {
+  let nameElement = document.querySelector("#footer h3");
+  let buttonContainer = document.querySelector("#footer .row"); 
+  let clickCount = 0;
+
+  // Cacher les boutons au chargement
+  buttonContainer.style.display = "none";
+
+  nameElement.addEventListener("click", function () {
+      clickCount++;
+
+      if (clickCount === 5) {
+          buttonContainer.style.display = "flex"; // Afficher les boutons
+      }
+  });
+});
