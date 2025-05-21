@@ -1,0 +1,416 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datainjection &mdash; GLPI plugins  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=c5aca1ce" />
+      <link rel="stylesheet" type="text/css" href="../_static/glpiplugins.css" />
+      <link rel="stylesheet" href="../_static/jquery.fancybox.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/glpi.css" type="text/css" />
+
+  
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/glpiplugins.js"></script>
+      <script src="../_static/jquery.js"></script>
+      <script src="../_static/jquery.fancybox.min.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Escalade" href="../escalade/index.html" />
+    <link rel="prev" title="Credit" href="../credit/index.html" /> 
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="glpi-plugins" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/datainjection/index.html" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">🚀 Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../presentation.html">Presentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../empty/index.html">Empty</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example/index.html">Example</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">🧩 GLPI Plugins</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../centreon/index.html">Centreon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credit/index.html">Credit</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Datainjection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#requirements-on-premise">Requirements (on-premise)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#plugin-installation">Plugin installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rights-management">Rights management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#managing-or-using-a-model">Managing or using a model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-a-template">Creating a template</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#defining-the-model">Defining the model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#file-to-be-injected">File to be injected</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mappings">Mappings</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#additional-information">Additional information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#model-validation">Model validation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#using-a-template">Using a template</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#choosing-a-template">Choosing a template</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#confirmation-before-import">Confirmation before import</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#import-result">Import result</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#complete-the-operation">Complete the operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#faq">FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../escalade/index.html">Escalade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fields/index.html">Fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formcreator/index.html">Form creator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genericobject/index.html">Generic Object</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news/index.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oauthimap/index.html">OAuth IMAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../order/index.html">Order</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pdf/index.html">PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../saml/index.html">SAML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sccm/index.html">SCCM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../treeview/index.html">Treeview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tag/index.html">Tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../uninstall/index.html">Uninstall</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">⭐ GLPI-Network Plugins</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advanceddashboard/index.html">Advanced dashboards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../agent_config/index.html">Agent Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../anonymize/index.html">Anonymize</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../approvalbymail/index.html">Approval by mail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../branding/index.html">Branding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloudinventory/index.html">Cloud Inventory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../webhook/index.html">Collaborative tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GDPR/index.html">GDPR Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glpiai/index.html">GLPI AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../holidays/index.html">Holidays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ldaptools/index.html">LDAP Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../moresatisfaction/index.html">More satisfaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oauthsso/index.html">OAuth SSO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../renamestrings/index.html">Rename strings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scim/index.html">SCIM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../splitcat/index.html">Splitcat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../translate/index.html">Translate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unread/index.html">Unread messages</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GLPI plugins</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Datainjection</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/datainjection/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="../credit/index.html" class="btn btn-neutral float-left" title="Credit" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../escalade/index.html" class="btn btn-neutral float-right" title="Escalade" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="datainjection">
+<h1>Datainjection<a class="headerlink" href="#datainjection" title="Link to this heading">¶</a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Download</p></th>
+<th class="head"><p>Sources</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/pluginsGLPI/datainjection/releases">https://github.com/pluginsGLPI/datainjection/releases</a></p></td>
+<td><p><a class="reference external" href="https://github.com/pluginsGLPI/datainjection">https://github.com/pluginsGLPI/datainjection</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="requirements-on-premise">
+<h2>Requirements (on-premise)<a class="headerlink" href="#requirements-on-premise" title="Link to this heading">¶</a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>GLPI Version</p></th>
+<th class="head"><p>Minimum PHP</p></th>
+<th class="head"><p>Recommended</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>10.0.x</p></td>
+<td><p>8.1</p></td>
+<td><p>8.2</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This plugin is available without a <a class="reference external" href="https://services.glpi-network.com/#offers">GLPI Network</a> subscription. It is also available on <a class="reference external" href="https://glpi-network.cloud">GLPI Cloud</a>.</p>
+</div>
+</section>
+<section id="plugin-installation">
+<h2>Plugin installation<a class="headerlink" href="#plugin-installation" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Go to the marketplace. Download and install the plugin <strong>Data Injection</strong></p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/Datainjection-1.png"><img alt="install the plugin" src="../_images/Datainjection-1.png" style="width: 364.0px; height: 167.0px;" />
+</a>
+</figure>
+</section>
+<section id="rights-management">
+<h2>Rights management<a class="headerlink" href="#rights-management" title="Link to this heading">¶</a></h2>
+<p>Once the plugin has been installed via the marketplace, you can configure rights according to profile:</p>
+<ul class="simple">
+<li><p>From <strong>Administration &gt; Profiles</strong>, select the profile in question</p></li>
+<li><p>Go to <strong>Data injection</strong></p></li>
+</ul>
+<p>For each user profile, you can grant the following rights:</p>
+<ul class="simple">
+<li><p><strong>Model management</strong> : Read / Update / Create / Purge</p></li>
+<li><p><strong>Import file</strong> : Read</p></li>
+</ul>
+</section>
+<section id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">¶</a></h2>
+<p>You can find the plugin configuration at <strong>Tools &gt; Data injection</strong> The extension is presented in the form of a wizard, each operation is broken down into steps and it is possible to return to the previous step to correct a choice.</p>
+<section id="managing-or-using-a-model">
+<h3>Managing or using a model<a class="headerlink" href="#managing-or-using-a-model" title="Link to this heading">¶</a></h3>
+<p>The first step allows you to choose the operation to be carried out, depending on your rights.</p>
+<ul class="simple">
+<li><p>Use an existing template in the drop-down menu</p></li>
+<li><p>Manage templates to :</p>
+<ul>
+<li><p>Create a new template</p></li>
+<li><p>Modify an existing template</p></li>
+<li><p>Delete an existing template</p></li>
+<li><p>Use an existing template</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="creating-a-template">
+<h3>Creating a template<a class="headerlink" href="#creating-a-template" title="Link to this heading">¶</a></h3>
+<p>The first step is to create a template if none exists.</p>
+<ul class="simple">
+<li><p>From <strong>Tools &gt; Data injection</strong></p></li>
+<li><p>Click on <strong>Template</strong></p></li>
+<li><p>Click on <strong>Add</strong></p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/Datainjection-2.png"><img alt="add template" src="../_images/Datainjection-2.png" style="width: 687.0px; height: 126.6px;" />
+</a>
+</figure>
+<section id="defining-the-model">
+<h4>Defining the model<a class="headerlink" href="#defining-the-model" title="Link to this heading">¶</a></h4>
+<p>This step allows you to define the main options for the extension:</p>
+<ul class="simple">
+<li><p><strong>Name</strong>: the name that will be visible from the drop-down list</p></li>
+<li><p><strong>Visibility</strong>: defines whether it will be visible to other users or not</p></li>
+<li><p><strong>Entity</strong> and <strong>sub-entity</strong>: the template can be visible in the creation entity only (sub-entity set to no) or in the entity and all sub-entity (sub-entity set to yes).</p></li>
+<li><p><strong>Comment</strong>: a comment for the template.</p></li>
+<li><p><strong>Type of data to import</strong>: the type of data present in the file to be imported. A file only consists of data of the same type.</p></li>
+<li><p><strong>Allow lines creation</strong>: tells the plugin to create objects if the line does not correspond to an existing element in the database.</p></li>
+<li><p><strong>Allow update rows</strong>: tells the plugin to modify existing objects using the data in the file.</p></li>
+<li><p><strong>Header’s presence</strong>: tells the plugin whether the headings present in the file (location, type of equipment, models, etc.) should be created. Creation will also be limited by the rights of the template user.</p></li>
+<li><p><strong>Update existing fields</strong>: the extension whether the data in the file can replace fields already filled in.</p></li>
+<li><p><strong>Date format</strong>: the date format is contained in the CSV file. If the format is incorrect, the date cannot be imported.</p></li>
+<li><p><strong>Decimal number format</strong>: the format used for the numbers in the CSV file. If the format is incorrect, the numbers cannot be imported.</p></li>
+</ul>
+<p><strong>After validation of the model</strong>, the following fields are added:</p>
+<ul class="simple">
+<li><p><strong>Presence of a header</strong>: indicates whether the first line of the CSV file is a header line, so that you can see the contents of the columns to identify the contents of the columns</p></li>
+<li><p><strong>File delimiter</strong>: field separator (by default a semicolon)</p></li>
+</ul>
+</section>
+<section id="file-to-be-injected">
+<h4>File to be injected<a class="headerlink" href="#file-to-be-injected" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>From the <strong>File to inject</strong> tab, you need to choose a file on your computer with exactly the same structure as the data already imported.</p></li>
+<li><p>Then define the <strong>encoding</strong> (ISO8859-1 for Windows files, UTF-8 for Linux files. Automatic detection can be used to determine the encoding, but will slow down file processing. We strongly recommend that you always work in UTF-8.)</p></li>
+</ul>
+<p>Once the file has been validated, you will be taken to the <strong>Mappings</strong> tab</p>
+</section>
+<section id="mappings">
+<h4>Mappings<a class="headerlink" href="#mappings" title="Link to this heading">¶</a></h4>
+<p>This stage is essential. It defines, for each column in the file, the corresponding field in the database. The columns are identified by the content of the header line (presence defined in the previous step) or by
+their position (starting from 0). A separator error (in the previous step) will result in an incorrect split. The <strong>View file</strong> button is used to preview the first lines of the file and check their content and the
+interpretation made by the plugin.</p>
+<p>For each column, you can choose</p>
+<ul class="simple">
+<li><p><strong>Do not retrieve data from this column</strong> (leave the <strong>Choose a table</strong> option)</p></li>
+<li><p><strong>Choose a table</strong>: the data type defined in step 2 or the financial information</p></li>
+<li><p><strong>Choose a field</strong>: which will be populated by the import</p></li>
+<li><p><strong>Link field</strong>: to indicate that this column will be used to check the existence of the data in the database and to choose between creating a new object or update. Candidate fields are, for example, the
+<strong>Serial number</strong>, the <strong>Name</strong> or the <strong>Inventory number</strong></p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It is mandatory to define at least 1 linking field. If a field is checked, it must be entered in your <strong>csv</strong> file used for importing.</p>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/Datainjection-3.png"><img alt="match the fields" src="../_images/Datainjection-3.png" style="width: 707.35px; height: 334.96999999999997px;" />
+</a>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is possible to define <strong>Comments</strong> or <strong>Notes</strong> as the destination for several columns in the file. Each column will be added to the field on a different line.
+This step is particularly important and a wrong choice could damage the inventory data. It is therefore advisable to test the import on a test database or
+to and reserve this function for advanced users.</p>
+</div>
+</section>
+</section>
+<section id="additional-information">
+<h3>Additional information<a class="headerlink" href="#additional-information" title="Link to this heading">¶</a></h3>
+<p>This step is used to define the fields that can/should be populated by the user when a file is injected. For each field, the same value will be used for each line of the file and will take precedence over the
+contents of the file.</p>
+<ul class="simple">
+<li><p><strong>Table</strong>: the data type defined in step <strong>Matching</strong></p></li>
+<li><p><strong>Field</strong>: will be populated by the import</p></li>
+<li><p><strong>Mandatory information</strong>: whether model user input is mandatory or optional</p></li>
+</ul>
+<p>Example of use :</p>
+<ul class="simple">
+<li><p>Purchase date when importing a delivery note</p></li>
+<li><p>Comments to define a criterion that can be used in the search engine
+(e.g. IMPORT ON 31/10)</p></li>
+</ul>
+<section id="model-validation">
+<h4>Model validation<a class="headerlink" href="#model-validation" title="Link to this heading">¶</a></h4>
+<p>From the Validation tab, you can confirm the registration. It is still
+possible to return to the previous steps to check and correct certain
+options.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/Datainjection-4.png"><img alt="template validation" src="../_images/Datainjection-4.png" style="width: 698.88px; height: 154.56px;" />
+</a>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you are working with a sub-entity, you must select the desired entity before importing.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some fields in your CSV file will need to be filled in as Booleans. This is the case, for example, with double-choice fields, such as: “Ports” (serial/parallel/USB) for printers. Instead of entering
+<strong>Yes | No</strong> in your CSV, enter <strong>1 | 0</strong> as appropriate. If these values are not changed, you will see an error in the report indicating that the wrong type of data has been entered.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="using-a-template">
+<h2>Using a template<a class="headerlink" href="#using-a-template" title="Link to this heading">¶</a></h2>
+<section id="choosing-a-template">
+<h3>Choosing a template<a class="headerlink" href="#choosing-a-template" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>From <strong>Tools &gt; Data injection</strong>, select the template you require from the drop-down list</p></li>
+<li><p>Then enter the path to the CSV file to be injected</p></li>
+<li><p>Specify the <strong>Encoding</strong> of the file if you know it. If not, leave on <strong>Automatic detection</strong></p></li>
+<li><p>Click on <strong>Proceed with import</strong></p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/Datainjection-5.png"><img alt="import file" src="../_images/Datainjection-5.png" style="width: 698.5999999999999px; height: 305.2px;" />
+</a>
+</figure>
+<section id="confirmation-before-import">
+<h4>Confirmation before import<a class="headerlink" href="#confirmation-before-import" title="Link to this heading">¶</a></h4>
+<p>A popup will ask you to confirm or not the import of the selected file.</p>
+</section>
+</section>
+</section>
+<section id="import-result">
+<h2>Import result<a class="headerlink" href="#import-result" title="Link to this heading">¶</a></h2>
+<p>From this last stage, by clicking on the coloured circle, you can view a report on the import and, in particular, locate any errors</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/Datainjection-7.png"><img alt="import result" src="../_images/Datainjection-7.png" style="width: 735.84px; height: 348.94px;" />
+</a>
+</figure>
+</section>
+<section id="complete-the-operation">
+<h2>Complete the operation<a class="headerlink" href="#complete-the-operation" title="Link to this heading">¶</a></h2>
+<p>A popup window will ask you whether or not you want to confirm the import of the selected file.
+Once the progress bar is full, click on <strong>Finish</strong></p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/Datainjection-6.png"><img alt="import completed" src="../_images/Datainjection-6.png" style="width: 736.2px; height: 178.65px;" />
+</a>
+</figure>
+</section>
+<section id="faq">
+<h2>FAQ<a class="headerlink" href="#faq" title="Link to this heading">¶</a></h2>
+<p>If you have any questions about using the plugin, please consult <a class="reference external" href="https://faq.teclib.com/04_Plugins/Data_injection/">our FAQ</a></p>
+<p><a class="reference external" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" class="align-right" src="../_images/cc-by-nc-nd.png" /></a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../credit/index.html" class="btn btn-neutral float-left" title="Credit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../escalade/index.html" class="btn btn-neutral float-right" title="Escalade" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2016-2025, Teclib&#39;.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+  <script type="text/javascript">
+    $(function(){
+      $('.image-reference').fancybox();
+    })
+  </script>
+
+</body>
+</html>

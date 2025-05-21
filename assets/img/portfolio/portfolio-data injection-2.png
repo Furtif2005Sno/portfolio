@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr-FR" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		<!-- All in One SEO 4.8.2 - aioseo.com -->
+		<title>GLPI : installation, configuration et utilisation du plugin Data Injection</title>
+	<meta name="description" content="La documentation sur le wiki du plugin GLPI Data Injection ne semble pas à jour." />
+	<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="author" content="Denis Szalkowski"/>
+	<meta name="keywords" content="data injection,plugin glpi,glpi,formateur glpi" />
+	<link rel="canonical" href="https://www.dsfc.net/parc/glpi/glpi-installation-configuration-utilisation-plugin-data-injection/" />
+	<meta name="generator" content="All in One SEO (AIOSEO) 4.8.2" />
+		<meta property="og:locale" content="fr_FR" />
+		<meta property="og:site_name" content="Denis Szalkowski Formateur Consultant" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="GLPI : installation, configuration et utilisation du plugin Data Injection" />
+		<meta property="og:description" content="La documentation sur le wiki du plugin GLPI Data Injection ne semble pas à jour." />
+		<meta property="og:url" content="https://www.dsfc.net/parc/glpi/glpi-installation-configuration-utilisation-plugin-data-injection/" />
+		<meta property="fb:admins" content="547387169" />
+		<meta property="og:image" content="https://www.dsfc.net/wp-content/uploads/2016/12/configuration-plugins-datainjection.jpg" />
+		<meta property="og:image:secure_url" content="https://www.dsfc.net/wp-content/uploads/2016/12/configuration-plugins-datainjection.jpg" />
+		<meta property="article:tag" content="data injection" />
+		<meta property="article:tag" content="plugin glpi" />
+		<meta property="article:tag" content="glpi" />
+		<meta property="article:tag" content="formateur glpi" />
+		<meta property="article:published_time" content="2016-12-06T20:12:24+00:00" />
+		<meta property="article:modified_time" content="2016-12-07T22:52:39+00:00" />
+		<meta property="article:publisher" content="https://www.facebook.com/dsfc.net" />
+		<meta property="article:author" content="https://www.facebook.com/denis.szalkowski" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@informatique" />
+		<meta name="twitter:title" content="GLPI : installation, configuration et utilisation du plugin Data Injection" />
+		<meta name="twitter:description" content="La documentation sur le wiki du plugin GLPI Data Injection ne semble pas à jour." />
+		<meta name="twitter:creator" content="@informatique" />
+		<meta name="twitter:image" content="https://www.dsfc.net/wp-content/uploads/2016/12/configuration-plugins-datainjection.jpg" />
+		<meta name="twitter:label1" content="Écrit par" />
+		<meta name="twitter:data1" content="Denis Szalkowski" />
+		<meta name="twitter:label2" content="Estimation du temps de lecture" />
+		<meta name="twitter:data2" content="2 minutes" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/www.dsfc.net\/parc\/glpi\/glpi-installation-configuration-utilisation-plugin-data-injection\/#article","name":"GLPI : installation, configuration et utilisation du plugin Data Injection","headline":"GLPI : installation, configuration et utilisation du plugin Data Injection","author":{"@id":"https:\/\/www.dsfc.net\/author\/denis-szalkowski\/#author"},"publisher":{"@id":"https:\/\/www.dsfc.net\/#organization"},"image":{"@type":"ImageObject","url":"https:\/\/www.dsfc.net\/wp-content\/uploads\/2016\/12\/configuration-plugins-datainjection.jpg","@id":"https:\/\/www.dsfc.net\/parc\/glpi\/glpi-installation-configuration-utilisation-plugin-data-injection\/#articleImage"},"datePublished":"2016-12-06T21:12:24+01:00","dateModified":"2016-12-07T23:52:39+01:00","inLanguage":"fr-FR","commentCount":6,"mainEntityOfPage":{"@id":"https:\/\/www.dsfc.net\/parc\/glpi\/glpi-installation-configuration-utilisation-plugin-data-injection\/#webpage"},"isPartOf":{"@id":"https:\/\/www.dsfc.net\/parc\/glpi\/glpi-installation-configuration-utilisation-plugin-data-injection\/#webpage"},"articleSection":"GLPI, Formateur GLPI"},{"@type":"BreadcrumbList","@id":"https:\/\/www.dsfc.net\/parc\/glpi\/glpi-installation-configuration-utilisation-plugin-data-injection\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/www.dsfc.net\/#listItem","position":1,"name":"Domicile","item":"https:\/\/www.dsfc.net\/","nextItem":{"@type":"ListItem","@id":"https:\/\/www.dsfc.net\/parc\/glpi\/glpi-installation-configuration-utilisation-plugin-data-injection\/#listItem","name":"GLPI : installation, configuration et utilisation du plugin Data Injection"}},{"@type":"ListItem","@id":"https:\/\/www.dsfc.net\/parc\/glpi\/glpi-installation-configuration-utilisation-plugin-data-injection\/#listItem","position":2,"name":"GLPI : installation, configuration et utilisation du plugin Data Injection","previousItem":{"@type":"ListItem","@id":"https:\/\/www.dsfc.net\/#listItem","name":"Domicile"}}]},{"@type":"Organization","@id":"https:\/\/www.dsfc.net\/#organization","name":"Denis Szalkowski Formateur Consultant","description":"Formateur et formations Linux Fedora, Ubuntu Server, PowerShell, IPv6, S\u00e9curit\u00e9 informatique, GLPI, Squid, LAMP, Apache, SQL, MySQL, MariaDB, PostgreSQL, SQL Server, Oracle Database, PHP, SEO \/ R\u00e9f\u00e9rencement, Veille, WordPress","url":"https:\/\/www.dsfc.net\/","telephone":"+33670373191","logo":{"@type":"ImageObject","url":"https:\/\/www.dsfc.net\/wp-content\/uploads\/2020\/12\/logo-dsfc.jpg","@id":"https:\/\/www.dsfc.net\/parc\/glpi\/glpi-installation-configuration-utilisation-plugin-data-injection\/#organizationLogo"},"image":{"@id":"https:\/\/www.dsfc.net\/parc\/glpi\/glpi-installation-configuration-utilisation-plugin-data-injection\/#organizationLogo"},"sameAs":["https:\/\/www.facebook.com\/dsfc.net","https:\/\/twitter.com\/informatique","https:\/\/www.linkedin.com\/in\/dsfc\/"]},{"@type":"Person","@id":"https:\/\/www.dsfc.net\/author\/denis-szalkowski\/#author","url":"https:\/\/www.dsfc.net\/author\/denis-szalkowski\/","name":"Denis Szalkowski"},{"@type":"WebPage","@id":"https:\/\/www.dsfc.net\/parc\/glpi\/glpi-installation-configuration-utilisation-plugin-data-injection\/#webpage","url":"https:\/\/www.dsfc.net\/parc\/glpi\/glpi-installation-configuration-utilisation-plugin-data-injection\/","name":"GLPI : installation, configuration et utilisation du plugin Data Injection","description":"La documentation sur le wiki du plugin GLPI Data Injection ne semble pas \u00e0 jour.","inLanguage":"fr-FR","isPartOf":{"@id":"https:\/\/www.dsfc.net\/#website"},"breadcrumb":{"@id":"https:\/\/www.dsfc.net\/parc\/glpi\/glpi-installation-configuration-utilisation-plugin-data-injection\/#breadcrumblist"},"author":{"@id":"https:\/\/www.dsfc.net\/author\/denis-szalkowski\/#author"},"creator":{"@id":"https:\/\/www.dsfc.net\/author\/denis-szalkowski\/#author"},"datePublished":"2016-12-06T21:12:24+01:00","dateModified":"2016-12-07T23:52:39+01:00"},{"@type":"WebSite","@id":"https:\/\/www.dsfc.net\/#website","url":"https:\/\/www.dsfc.net\/","name":"Denis Szalkowski Formateur Consultant","description":"Formateur et formations Linux Fedora, Ubuntu Server, PowerShell, IPv6, S\u00e9curit\u00e9 informatique, GLPI, Squid, LAMP, Apache, SQL, MySQL, MariaDB, PostgreSQL, SQL Server, Oracle Database, PHP, SEO \/ R\u00e9f\u00e9rencement, Veille, WordPress","inLanguage":"fr-FR","publisher":{"@id":"https:\/\/www.dsfc.net\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+
+<link rel="alternate" type="application/rss+xml" title="Denis Szalkowski Formateur Consultant &raquo; Flux" href="https://www.dsfc.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Denis Szalkowski Formateur Consultant &raquo; Flux des commentaires" href="https://www.dsfc.net/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Denis Szalkowski Formateur Consultant &raquo; GLPI : installation, configuration et utilisation du plugin Data Injection Flux des commentaires" href="https://www.dsfc.net/parc/glpi/glpi-installation-configuration-utilisation-plugin-data-injection/feed/" />
+<style id='wp-block-site-logo-inline-css'>
+.wp-block-site-logo{box-sizing:border-box;line-height:0}.wp-block-site-logo a{display:inline-block;line-height:0}.wp-block-site-logo.is-default-size img{height:auto;width:120px}.wp-block-site-logo img{height:auto;max-width:100%}.wp-block-site-logo a,.wp-block-site-logo img{border-radius:inherit}.wp-block-site-logo.aligncenter{margin-left:auto;margin-right:auto;text-align:center}:root :where(.wp-block-site-logo.is-style-rounded){border-radius:9999px}
+</style>
+<style id='wp-block-site-title-inline-css'>
+.wp-block-site-title{box-sizing:border-box}.wp-block-site-title :where(a){color:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+</style>
+<style id='wp-block-site-tagline-inline-css'>
+.wp-block-site-tagline{box-sizing:border-box}
+</style>
+<style id='wp-block-navigation-link-inline-css'>
+.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{border-top:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}
+</style>
+<link rel='stylesheet' id='wp-block-navigation-css' href='https://www.dsfc.net/wp-includes/blocks/navigation/style.min.css' media='all' />
+<style id='wp-block-columns-inline-css'>
+.wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
+</style>
+<style id='wp-block-group-inline-css'>
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+</style>
+<style id='wp-block-group-theme-inline-css'>
+:where(.wp-block-group.has-background){padding:1.25em 2.375em}
+</style>
+<style id='wp-block-template-part-theme-inline-css'>
+:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='wp-block-post-title-inline-css'>
+.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+</style>
+<style id='wp-block-post-content-inline-css'>
+.wp-block-post-content{display:flow-root}
+</style>
+<style id='wp-block-post-author-inline-css'>
+.wp-block-post-author{box-sizing:border-box;display:flex;flex-wrap:wrap}.wp-block-post-author__byline{font-size:.5em;margin-bottom:0;margin-top:0;width:100%}.wp-block-post-author__avatar{margin-right:1em}.wp-block-post-author__bio{font-size:.7em;margin-bottom:.7em}.wp-block-post-author__content{flex-basis:0;flex-grow:1}.wp-block-post-author__name{margin:0}
+</style>
+<style id='wp-block-post-date-inline-css'>
+.wp-block-post-date{box-sizing:border-box}
+</style>
+<style id='wp-block-post-terms-inline-css'>
+.wp-block-post-terms{box-sizing:border-box}.wp-block-post-terms .wp-block-post-terms__separator{white-space:pre-wrap}
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark: #4b5161;--wp--preset--color--grey: #abb7c3;--wp--preset--color--light: #f9f8f5;--wp--preset--color--salmon: #ff7f7c;--wp--preset--color--pink: #ff00ff;--wp--preset--color--red: #ff4242;--wp--preset--color--orange: #ff8040;--wp--preset--color--yellow: #f7bc5b;--wp--preset--color--green: #79d31f;--wp--preset--color--light-blue: #4dd8ff;--wp--preset--color--blue: #00b1ed;--wp--preset--color--purple: #a448ff;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--blue-to-purple: linear-gradient(135deg,var(--wp--preset--color--blue) 0%,var(--wp--preset--color--purple) 70%);--wp--preset--gradient--purple-to-red: linear-gradient(135deg,var(--wp--preset--color--purple) 0%,var(--wp--preset--color--red) 100%);--wp--preset--gradient--orange-to-red: linear-gradient(135deg,var(--wp--preset--color--orange) 0%,var(--wp--preset--color--red) 60%);--wp--preset--gradient--yellow-to-salmon-to-red: linear-gradient(135deg,var(--wp--preset--color--yellow) 0%,var(--wp--preset--color--salmon) 50%,var(--wp--preset--color--red) 100%);--wp--preset--gradient--yellow-to-green: linear-gradient(135deg,var(--wp--preset--color--yellow) 0%,var(--wp--preset--color--green) 100%);--wp--preset--gradient--green-to-blue: linear-gradient(135deg,var(--wp--preset--color--green) 0%,var(--wp--preset--color--blue) 80%);--wp--preset--gradient--blue-to-purple-to-pink: linear-gradient(135deg,var(--wp--preset--color--blue) 0%,var(--wp--preset--color--purple) 40%,var(--wp--preset--color--pink) 90%);--wp--preset--gradient--red-to-pink-to-purple-to-blue: linear-gradient(135deg,var(--wp--preset--color--red) 0%,var(--wp--preset--color--pink) 30%,var(--wp--preset--color--purple) 70%,var(--wp--preset--color--blue) 100%);--wp--preset--gradient--grey-to-dark: linear-gradient(135deg,var(--wp--preset--color--grey) 0%,var(--wp--preset--color--black) 80%);--wp--preset--gradient--light-to-grey: linear-gradient(135deg,var(--wp--preset--color--light) 0%,var(--wp--preset--color--grey) 80%);--wp--preset--font-size--small: 15px;--wp--preset--font-size--medium: 24px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--tiny: 12px;--wp--preset--font-size--normal: 18px;--wp--preset--font-size--huge: 48px;--wp--preset--font-size--gigantic: 60px;--wp--preset--font-size--massive: 72px;--wp--preset--font-family--quicksand: Quicksand, sans-serif;--wp--preset--font-family--work-sans: "Work Sans", sans-serif;--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--roboto-slab: "Roboto Slab", serif;--wp--preset--font-family--merriweather: Merriweather, serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 1200px;--wp--style--global--wide-size: 1440px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--light);color: var(--wp--preset--color--dark);font-family: var(--wp--preset--font-family--work-sans);font-size: var(--wp--preset--font-size--normal);font-style: normal;font-weight: 300;line-height: 1.6;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--blue);text-decoration: underline;}h1{color: var(--wp--preset--color--black);font-size: var(--wp--preset--font-size--huge);}h2{color: var(--wp--preset--color--black);font-size: calc(var(--wp--preset--font-size--medium) * 1.375);}h3{color: var(--wp--preset--color--black);font-size: calc(var(--wp--preset--font-size--medium) * 1.25);}h4{color: var(--wp--preset--color--black);font-size: calc(var(--wp--preset--font-size--medium) * 1.125);}h5{color: var(--wp--preset--color--black);font-size: var(--wp--preset--font-size--medium);}h6{color: var(--wp--preset--color--black);font-size: calc(var(--wp--preset--font-size--medium) * 0.875);}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-color{color: var(--wp--preset--color--dark) !important;}.has-grey-color{color: var(--wp--preset--color--grey) !important;}.has-light-color{color: var(--wp--preset--color--light) !important;}.has-salmon-color{color: var(--wp--preset--color--salmon) !important;}.has-pink-color{color: var(--wp--preset--color--pink) !important;}.has-red-color{color: var(--wp--preset--color--red) !important;}.has-orange-color{color: var(--wp--preset--color--orange) !important;}.has-yellow-color{color: var(--wp--preset--color--yellow) !important;}.has-green-color{color: var(--wp--preset--color--green) !important;}.has-light-blue-color{color: var(--wp--preset--color--light-blue) !important;}.has-blue-color{color: var(--wp--preset--color--blue) !important;}.has-purple-color{color: var(--wp--preset--color--purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-background-color{background-color: var(--wp--preset--color--dark) !important;}.has-grey-background-color{background-color: var(--wp--preset--color--grey) !important;}.has-light-background-color{background-color: var(--wp--preset--color--light) !important;}.has-salmon-background-color{background-color: var(--wp--preset--color--salmon) !important;}.has-pink-background-color{background-color: var(--wp--preset--color--pink) !important;}.has-red-background-color{background-color: var(--wp--preset--color--red) !important;}.has-orange-background-color{background-color: var(--wp--preset--color--orange) !important;}.has-yellow-background-color{background-color: var(--wp--preset--color--yellow) !important;}.has-green-background-color{background-color: var(--wp--preset--color--green) !important;}.has-light-blue-background-color{background-color: var(--wp--preset--color--light-blue) !important;}.has-blue-background-color{background-color: var(--wp--preset--color--blue) !important;}.has-purple-background-color{background-color: var(--wp--preset--color--purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-border-color{border-color: var(--wp--preset--color--dark) !important;}.has-grey-border-color{border-color: var(--wp--preset--color--grey) !important;}.has-light-border-color{border-color: var(--wp--preset--color--light) !important;}.has-salmon-border-color{border-color: var(--wp--preset--color--salmon) !important;}.has-pink-border-color{border-color: var(--wp--preset--color--pink) !important;}.has-red-border-color{border-color: var(--wp--preset--color--red) !important;}.has-orange-border-color{border-color: var(--wp--preset--color--orange) !important;}.has-yellow-border-color{border-color: var(--wp--preset--color--yellow) !important;}.has-green-border-color{border-color: var(--wp--preset--color--green) !important;}.has-light-blue-border-color{border-color: var(--wp--preset--color--light-blue) !important;}.has-blue-border-color{border-color: var(--wp--preset--color--blue) !important;}.has-purple-border-color{border-color: var(--wp--preset--color--purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-blue-to-purple-gradient-background{background: var(--wp--preset--gradient--blue-to-purple) !important;}.has-purple-to-red-gradient-background{background: var(--wp--preset--gradient--purple-to-red) !important;}.has-orange-to-red-gradient-background{background: var(--wp--preset--gradient--orange-to-red) !important;}.has-yellow-to-salmon-to-red-gradient-background{background: var(--wp--preset--gradient--yellow-to-salmon-to-red) !important;}.has-yellow-to-green-gradient-background{background: var(--wp--preset--gradient--yellow-to-green) !important;}.has-green-to-blue-gradient-background{background: var(--wp--preset--gradient--green-to-blue) !important;}.has-blue-to-purple-to-pink-gradient-background{background: var(--wp--preset--gradient--blue-to-purple-to-pink) !important;}.has-red-to-pink-to-purple-to-blue-gradient-background{background: var(--wp--preset--gradient--red-to-pink-to-purple-to-blue) !important;}.has-grey-to-dark-gradient-background{background: var(--wp--preset--gradient--grey-to-dark) !important;}.has-light-to-grey-gradient-background{background: var(--wp--preset--gradient--light-to-grey) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-tiny-font-size{font-size: var(--wp--preset--font-size--tiny) !important;}.has-normal-font-size{font-size: var(--wp--preset--font-size--normal) !important;}.has-huge-font-size{font-size: var(--wp--preset--font-size--huge) !important;}.has-gigantic-font-size{font-size: var(--wp--preset--font-size--gigantic) !important;}.has-massive-font-size{font-size: var(--wp--preset--font-size--massive) !important;}.has-quicksand-font-family{font-family: var(--wp--preset--font-family--quicksand) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-site-title){font-family: var(--wp--preset--font-family--quicksand);font-size: var(--wp--preset--font-size--large);}
+:root :where(.wp-block-site-title a:where(:not(.wp-element-button))){color: var(--wp--preset--color--light-blue);}
+:root :where(.wp-block-navigation){font-family: var(--wp--preset--font-family--quicksand);font-style: normal;font-weight: 400;}
+:root :where(.wp-block-post-title){font-family: var(--wp--preset--font-family--quicksand);}
+:root :where(.wp-block-post-date){font-size: var(--wp--preset--font-size--small);}
+:root :where(.wp-block-post-author){font-size: var(--wp--preset--font-size--small);}
+:root :where(.wp-block-post-terms){font-size: var(--wp--preset--font-size--small);}
+</style>
+<style id='core-block-supports-inline-css'>
+.wp-container-core-columns-is-layout-9d6595d7{flex-wrap:nowrap;}
+</style>
+<style id='wp-block-template-skip-link-inline-css'>
+
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.dsfc.net/wp-content/plugins/contact-form-7/includes/css/styles.css' media='all' />
+<link rel='stylesheet' id='toc-screen-css' href='https://www.dsfc.net/wp-content/plugins/table-of-contents-plus/screen.min.css' media='all' />
+<style id='toc-screen-inline-css'>
+div#toc_container {width: 50%;}div#toc_container ul li {font-size: 125%;}
+</style>
+<link rel='stylesheet' id='dashicons-css' href='https://www.dsfc.net/wp-includes/css/dashicons.min.css' media='all' />
+<link rel='stylesheet' id='hansen-style-css' href='https://www.dsfc.net/wp-content/themes/hansen/style.css' media='all' />
+<link rel='stylesheet' id='hansen-fonts-style-css' href='https://www.dsfc.net/wp-content/fonts/378a19027b818da1d76d6b04cf49ba60.css' media='all' />
+<script src="https://www.dsfc.net/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script src="https://www.dsfc.net/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script src="https://www.dsfc.net/wp-content/themes/hansen/assets/js/navigation.js" id="hansen-navigation-js"></script>
+<script src="https://www.dsfc.net/wp-content/themes/hansen/assets/js/alignment.js" id="hansen-alignment-js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.dsfc.net/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.1" />
+<link rel='shortlink' href='https://www.dsfc.net/?p=9472' />
+<link rel="alternate" type="application/feed+json" title="Denis Szalkowski Formateur Consultant &raquo; JSON Feed" href="https://www.dsfc.net/feed/json/" />
+<link rel="alternate" type="application/feed+json" title="Denis Szalkowski Formateur Consultant &raquo; GLPI : installation, configuration et utilisation du plugin Data Injection Comments Feed" href="https://www.dsfc.net/parc/glpi/glpi-installation-configuration-utilisation-plugin-data-injection/feed/json/" />
+<style data-context="foundation-flickity-css">/*! Flickity v2.0.2
+http://flickity.metafizzy.co
+---------------------------------------------- */.flickity-enabled{position:relative}.flickity-enabled:focus{outline:0}.flickity-viewport{overflow:hidden;position:relative;height:100%}.flickity-slider{position:absolute;width:100%;height:100%}.flickity-enabled.is-draggable{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.flickity-enabled.is-draggable .flickity-viewport{cursor:move;cursor:-webkit-grab;cursor:grab}.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down{cursor:-webkit-grabbing;cursor:grabbing}.flickity-prev-next-button{position:absolute;top:50%;width:44px;height:44px;border:none;border-radius:50%;background:#fff;background:hsla(0,0%,100%,.75);cursor:pointer;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.flickity-prev-next-button:hover{background:#fff}.flickity-prev-next-button:focus{outline:0;box-shadow:0 0 0 5px #09f}.flickity-prev-next-button:active{opacity:.6}.flickity-prev-next-button.previous{left:10px}.flickity-prev-next-button.next{right:10px}.flickity-rtl .flickity-prev-next-button.previous{left:auto;right:10px}.flickity-rtl .flickity-prev-next-button.next{right:auto;left:10px}.flickity-prev-next-button:disabled{opacity:.3;cursor:auto}.flickity-prev-next-button svg{position:absolute;left:20%;top:20%;width:60%;height:60%}.flickity-prev-next-button .arrow{fill:#333}.flickity-page-dots{position:absolute;width:100%;bottom:-25px;padding:0;margin:0;list-style:none;text-align:center;line-height:1}.flickity-rtl .flickity-page-dots{direction:rtl}.flickity-page-dots .dot{display:inline-block;width:10px;height:10px;margin:0 8px;background:#333;border-radius:50%;opacity:.25;cursor:pointer}.flickity-page-dots .dot.is-selected{opacity:1}</style><script type="importmap" id="wp-importmap">
+{"imports":{"@wordpress\/interactivity":"https:\/\/www.dsfc.net\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=55aebb6e0a16726baffb"}}
+</script>
+<script type="module" src="https://www.dsfc.net/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=61572d447d60c0aa5240" id="@wordpress/block-library/navigation/view-js-module"></script>
+<link rel="modulepreload" href="https://www.dsfc.net/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=55aebb6e0a16726baffb" id="@wordpress/interactivity-js-modulepreload"><style>.ios7.web-app-mode.has-fixed header{ background-color: rgba(45,53,63,.88);}</style></head>
+
+<body class="wp-singular post-template-default single single-post postid-9472 single-format-standard wp-embed-responsive wp-theme-hansen">
+
+<div class="wp-site-blocks"><header class="wp-block-template-part">
+
+<div class="wp-block-group alignfull has-light-color has-dark-background-color has-text-color has-background site-header is-layout-constrained wp-block-group-is-layout-constrained">
+
+
+
+	<div class="wp-block-group alignwide site-header-inner is-layout-flow wp-block-group-is-layout-flow">
+		
+		<div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile is-style-no-spacing is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+		
+		<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+		<h1 class="wp-block-site-title"><a href="https://www.dsfc.net" target="_self" rel="home">Denis Szalkowski Formateur Consultant</a></h1>
+		<p class="wp-block-site-tagline">Formateur et formations Linux Fedora, Ubuntu Server, PowerShell, IPv6, Sécurité informatique, GLPI, Squid, LAMP, Apache, SQL, MySQL, MariaDB, PostgreSQL, SQL Server, Oracle Database, PHP, SEO / Référencement, Veille, WordPress</p></div>
+		
+		
+
+		<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+	<div style="text-align:right;margin-top:-50px;margin-bottom:15px;">
+	<form action="https://www.dsfc.net/" method="get">
+	<input style="border-radius:5px;background-repeat:no-repeat;background-image: url('/wp-content/themes/hansen/searchicon.png');" name="s" type="text" value="" maxlength="150" />
+	<input style="padding-top:5px;border-radius:5px;background-repeat:no-repeat;background-image: url('/wp-content/themes/hansen/search.png');" value="" type="submit" />
+	</form>
+
+	</div>
+
+		<nav class="is-responsive wp-block-navigation is-layout-flex wp-block-navigation-is-layout-flex" 
+		 data-wp-interactive="core/navigation" data-wp-context='{"overlayOpenedBy":{"click":false,"hover":false,"focus":false},"type":"overlay","roleAttribute":"","ariaLabel":"Menu"}'><button aria-haspopup="dialog" aria-label="Ouvrir le menu" class="wp-block-navigation__responsive-container-open" 
+				data-wp-on-async--click="actions.openMenuOnClick"
+				data-wp-on--keydown="actions.handleMenuKeydown"
+			><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5" /><rect x="4" y="15" width="16" height="1.5" /></svg></button>
+				<div class="wp-block-navigation__responsive-container  has-text-color has-dark-color has-background has-light-background-color"  id="modal-1" 
+				data-wp-class--has-modal-open="state.isMenuOpen"
+				data-wp-class--is-menu-open="state.isMenuOpen"
+				data-wp-watch="callbacks.initMenu"
+				data-wp-on--keydown="actions.handleMenuKeydown"
+				data-wp-on-async--focusout="actions.handleMenuFocusout"
+				tabindex="-1"
+			>
+					<div class="wp-block-navigation__responsive-close" tabindex="-1">
+						<div class="wp-block-navigation__responsive-dialog" 
+				data-wp-bind--aria-modal="state.ariaModal"
+				data-wp-bind--aria-label="state.ariaLabel"
+				data-wp-bind--role="state.roleAttribute"
+			>
+							<button aria-label="Fermer le menu" class="wp-block-navigation__responsive-container-close" 
+				data-wp-on-async--click="actions.closeMenuOnClick"
+			><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m13.06 12 6.47-6.47-1.06-1.06L12 10.94 5.53 4.47 4.47 5.53 10.94 12l-6.47 6.47 1.06 1.06L12 13.06l6.47 6.47 1.06-1.06L13.06 12Z"></path></svg></button>
+							<div class="wp-block-navigation__responsive-container-content" 
+				data-wp-watch="callbacks.focusFirstElement"
+			 id="modal-1-content">
+								<ul class="wp-block-navigation__container is-responsive wp-block-navigation"><li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.dsfc.net/formations/" title=""><span class="wp-block-navigation-item__label">Formations</span></a></li><li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.dsfc.net/actualites/" title=""><span class="wp-block-navigation-item__label">Actualités</span></a></li><li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.dsfc.net/supports-cours-tutoriaux/" title=""><span class="wp-block-navigation-item__label">Supports</span></a></li><li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.dsfc.net/parcours-cv/" title=""><span class="wp-block-navigation-item__label">Parcours</span></a></li><li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.dsfc.net/competences/" title=""><span class="wp-block-navigation-item__label">Compétences</span></a></li><li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.dsfc.net/newsletter/" title=""><span class="wp-block-navigation-item__label">Newsletter</span></a></li><li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.dsfc.net/contact/" title=""><span class="wp-block-navigation-item__label">Contact</span></a></li></ul>
+							</div>
+						</div>
+					</div>
+				</div></nav>
+
+		</div>
+		</div>
+		</div>
+</div>
+
+</header>
+
+
+<main id="primary" class="wp-block-group site-content single is-layout-flow wp-block-group-is-layout-flow">
+
+	
+	<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+		<h2 class="wp-block-post-title">GLPI : installation, configuration et utilisation du plugin Data Injection</h2>
+		<p style="font-size: smaller;">Auteur : Denis Szalkowski / Licence : CC 4.0 BY-NC-ND</p>
+	</div>
+	
+
+	<div class="entry-content wp-block-post-content is-layout-constrained wp-block-post-content-is-layout-constrained"><p>Le <a title="GLPI Plugins - Data Injection" href="https://plugins.glpi-project.org/#/plugin/datainjection" target="_blank" rel="nofollow">plugin Data Injection pour GLPI</a> permet de récupérer, à partir de fichiers CSV, les données issues d&rsquo;autres logiciels de gestion d&rsquo;inventaire ou bien des listes de matériels communiquées par des fournisseurs. La <a title="plugins GLPI / data injection 2.4.2" href="https://github.com/pluginsGLPI/datainjection/releases" target="_blank" rel="nofollow">version 2.4.2 de Data Injection</a> est compatible avec la <a title="Latest stable GLPI version" href="https://glpi-project.org/spip.php?article41" target="_blank" rel="nofollow">version 9.1.1 de GLPI</a>.</p>
+<h3>Installation du plugin GLPI Data Injection</h4>
+<p>Après avoir téléchargé l&rsquo;archive tar.gz, vous devez transférer le plugin GLPI Data Injection, vers le serveur Linux (Linux Fedora dans l&rsquo;exemple), dans le dossier /usr/share/glpi/plugins via SCP (commande <a title="scp - secure copy (remote file copy program) " href="https://linux.die.net/man/1/scp" target="_blank" rel="nofollow">scp sous Linux</a>, <a title="WinSCP Downloads" href="https://winscp.net/eng/download.php" target="_blank" rel="nofollow">WinSCP sous Windows</a> ou <a title="PuTTY sous Windows / Linux" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank" rel="nofollow">PuTTY sous Windows / Linux</a> et le décompresser :</p>
+<pre>cd /usr/share/glpi/plugins
+tar xzvf glpi-datainjection-2.4.2.tar.gz
+rm -f glpi-datainjection-2.4.2.tar.gz</pre>
+<p>A partir de l&rsquo;interface GLPI, allez dans <em>Configuration</em> &gt; <em>Plugins</em> pour <em>Installer</em>, puis <em>Activer</em> le plugin Data Injection (<em>Mettre à jour</em> en cas de mise à jour avant de l&rsquo;activer).</p>
+<p style="text-align:center;"><img fetchpriority="high" decoding="async" title="Installation du plugin GLPI Data Injection" src="https://www.dsfc.net/wp-content/uploads/2016/12/configuration-plugins-datainjection.jpg" alt="Installation du plugin GLPI Data Injection" width="590" height="249" /></p>
+<h3>La gestion des droits</h4>
+<p>Seuls les utilisateurs disposant du profil <em>Super-Admin</em> sont autorisés à importer des données dans GLPI via le plugin Data Injection. Pour donner les autorisation d&rsquo;utiliser et des créer des modèles d&rsquo;injection de fichiers, il faut aller dans <em>Administration</em> &gt; <em>Profils</em>. Cliquez sur le profil de l&rsquo;utilisateur concerné. Choisissez <em>Injection de fichiers</em> dans le bandeau de gauche du profil  et donnez les autorisations adéquates.</p>
+<p style="text-align:center;"><img decoding="async" title="La gestion des droits" src="https://www.dsfc.net/wp-content/uploads/2016/12/glpi-administration-profils-injection-de-fichiers.jpg" alt="La gestion des droits" width="590" height="358" /></p>
+<h3>Modèle d&rsquo;injection de fichiers</h4>
+<p>Vous devez ensuite définir un modèle d&rsquo;injection de fichiers en allant dans <em>Outils</em> &gt; <em>Injection de fichiers</em> &gt; <em>Gestion de modèles</em>.</p>
+<p style="text-align:center;"><img decoding="async" title="Modèle d'injection de fichiers" src="https://www.dsfc.net/wp-content/uploads/2016/12/glpi-outils-injection-de-fichiers-gestion-de-modeles.jpg" alt="Modèle d'injection de fichiers" width="590" height="140" /></p>
+<p>Cliquez sur l&rsquo;icône + pour créer un nouveau modèle. L&rsquo;option <em>Ajouter des intitulés</em> permet de créer de nouveau enregistrements dans des tables liées (lieux, etc).</p>
+<p style="text-align:center;"><img loading="lazy" decoding="async" src="https://www.dsfc.net/wp-content/uploads/2016/12/glpi-outils-injection-de-fichiers-ajout-nouveau-modele.jpg" alt="glpi-outils-injection-de-fichiers-ajout-nouveau-modele" width="590" height="373" /></p>
+<p>Vous devez charger le modèle de fichier dans la rubrique latérale gauche <em>Fichier à injecter</em>.</p>
+<p style="text-align:center;"><img loading="lazy" decoding="async" title="Injection de fichiers - Gestion des modèles - Fichier à injecter" src="https://www.dsfc.net/wp-content/uploads/2016/12/injection-de-fichiers-gestion-de-modele-fichier-a-injecter.jpg" alt="Injection de fichiers - Gestion des modèles - Fichier à injecter" width="590" height="188" /></p>
+<p>Vous devez établir des correspondances en définissant les champs de liaison entre votre fichiers et vos tables GLPI.</p>
+<p style="text-align:center;"><img loading="lazy" decoding="async" title="Injection de fichiers - Gestion des modèles - Correspondance" src="https://www.dsfc.net/wp-content/uploads/2016/12/injection-de-fichiers-gestion-de-modele-fichier-a-injecter-correspondances.jpg" alt="Injection de fichiers - Gestion des modèles - Correspondance" width="590" height="187" /></p>
+<h3>Injection des données</h4>
+<p>Une fois sauvegardé, le modèle créé ci-dessus vous servira à injecter vos données à partir de votre fichier CSV ! Sélectionnez votre modèle dans la liste déroulante et cliquez sur <em>Parcourir</em> pour importer vos données issues de votre fichier CSV. Enfin, validez la procédure en sélectionnant <em>Procéder à l&rsquo;import</em>.</p>
+<p style="text-align:center;"><img loading="lazy" decoding="async" title="GLPI - Injection de fichiers - Utiliser le modèle - Choisir un fichier " src="https://www.dsfc.net/wp-content/uploads/2016/12/glpi-injection-de-fichiers.jpg" alt="GLPI - Injection de fichiers - Utiliser le modèle - Choisir un fichier " width="590" height="211" /></p>
+<h3>Documentation plugin GLPI Data Injection</h4>
+<ul>
+<li><a title="Manuel du plugin GLPI Data Injection" href="https://forge.glpi-project.org/projects/datainjection/wiki/Fr_manuel" target="_blank" rel="nofollow">Manuel du plugin GLPI Data Injection</a></li>
+<li><a title="Données pouvant être injectées dans GLPI via le plugin Data Injection" href="https://forge.glpi-project.org/projects/datainjection/wiki/Fr_donnees" target="_blank" rel="nofollow">Données pouvant être injectées dans GLPI via le plugin Data Injection</a></li>
+</ul>
+</div>
+	
+	<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:30px;padding-bottom:30px;">
+		
+		<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+			
+			<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+				<div class="is-style-with-icon wp-block-post-author"><div class="wp-block-post-author__content"><p class="wp-block-post-author__name">Denis Szalkowski</p></div></div>
+				<div class="is-style-with-icon wp-block-post-date"><time datetime="2016-12-06T21:12:24+01:00">6 décembre 2016</time></div>
+			</div>
+			
+
+			
+			<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+				<div class="taxonomy-category is-style-with-icon-cats wp-block-post-terms"><a href="https://www.dsfc.net/parc/glpi/" rel="tag">GLPI</a></div>
+				<div class="taxonomy-post_tag is-style-with-icon-tags wp-block-post-terms"><a href="https://www.dsfc.net/formateur-glpi/" rel="tag">Formateur GLPI</a></div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+
+</main>
+
+
+<footer class="wp-block-template-part">
+<div class="wp-block-group alignfull has-light-color has-dark-background-color has-text-color has-background site-header is-layout-constrained wp-block-group-is-layout-constrained">
+
+	
+	<div class="wp-block-group alignwide site-header-inner is-layout-flow wp-block-group-is-layout-flow">
+
+		
+		<div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile is-style-no-spacing is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+		
+
+		
+		<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow"><nav class="is-responsive wp-block-navigation is-layout-flex wp-block-navigation-is-layout-flex" 
+		 data-wp-interactive="core/navigation" data-wp-context='{"overlayOpenedBy":{"click":false,"hover":false,"focus":false},"type":"overlay","roleAttribute":"","ariaLabel":"Menu"}'><button aria-haspopup="dialog" aria-label="Ouvrir le menu" class="wp-block-navigation__responsive-container-open" 
+				data-wp-on-async--click="actions.openMenuOnClick"
+				data-wp-on--keydown="actions.handleMenuKeydown"
+			><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5" /><rect x="4" y="15" width="16" height="1.5" /></svg></button>
+				<div class="wp-block-navigation__responsive-container  has-text-color has-dark-color has-background has-light-background-color"  id="modal-2" 
+				data-wp-class--has-modal-open="state.isMenuOpen"
+				data-wp-class--is-menu-open="state.isMenuOpen"
+				data-wp-watch="callbacks.initMenu"
+				data-wp-on--keydown="actions.handleMenuKeydown"
+				data-wp-on-async--focusout="actions.handleMenuFocusout"
+				tabindex="-1"
+			>
+					<div class="wp-block-navigation__responsive-close" tabindex="-1">
+						<div class="wp-block-navigation__responsive-dialog" 
+				data-wp-bind--aria-modal="state.ariaModal"
+				data-wp-bind--aria-label="state.ariaLabel"
+				data-wp-bind--role="state.roleAttribute"
+			>
+							<button aria-label="Fermer le menu" class="wp-block-navigation__responsive-container-close" 
+				data-wp-on-async--click="actions.closeMenuOnClick"
+			><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m13.06 12 6.47-6.47-1.06-1.06L12 10.94 5.53 4.47 4.47 5.53 10.94 12l-6.47 6.47 1.06 1.06L12 13.06l6.47 6.47 1.06-1.06L13.06 12Z"></path></svg></button>
+							<div class="wp-block-navigation__responsive-container-content" 
+				data-wp-watch="callbacks.focusFirstElement"
+			 id="modal-2-content">
+								<ul class="wp-block-navigation__container is-responsive wp-block-navigation"><li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.dsfc.net/formations/" title=""><span class="wp-block-navigation-item__label">Formations</span></a></li><li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.dsfc.net/actualites/" title=""><span class="wp-block-navigation-item__label">Actualités</span></a></li><li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.dsfc.net/supports-cours-tutoriaux/" title=""><span class="wp-block-navigation-item__label">Supports</span></a></li><li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.dsfc.net/parcours-cv/" title=""><span class="wp-block-navigation-item__label">Parcours</span></a></li><li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.dsfc.net/competences/" title=""><span class="wp-block-navigation-item__label">Compétences</span></a></li><li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.dsfc.net/newsletter/" title=""><span class="wp-block-navigation-item__label">Newsletter</span></a></li><li class=" wp-block-navigation-item  menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://www.dsfc.net/contact/" title=""><span class="wp-block-navigation-item__label">Contact</span></a></li></ul>
+							</div>
+						</div>
+					</div>
+				</div></nav></div></div></div>
+</div>
+
+</footer>
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/hansen\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<!-- Powered by WPtouch: 4.3.60 --><script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.id = 'wp-skip-link';
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerText = 'Aller au contenu';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+</script>
+<script src="https://www.dsfc.net/wp-includes/js/dist/hooks.min.js" id="wp-hooks-js"></script>
+<script src="https://www.dsfc.net/wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src="https://www.dsfc.net/wp-content/plugins/contact-form-7/includes/swv/js/index.js" id="swv-js"></script>
+<script id="contact-form-7-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2025-02-06 12:02:14+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"fr"},"This contact form is placed in the wrong place.":["Ce formulaire de contact est plac\u00e9 dans un mauvais endroit."],"Error:":["Erreur\u00a0:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+</script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/www.dsfc.net\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+</script>
+<script src="https://www.dsfc.net/wp-content/plugins/contact-form-7/includes/js/index.js" id="contact-form-7-js"></script>
+<script id="toc-front-js-extra">
+var tocplus = {"smooth_scroll":"1"};
+</script>
+<script src="https://www.dsfc.net/wp-content/plugins/table-of-contents-plus/front.min.js" id="toc-front-js"></script>
+</body>
+</html>
